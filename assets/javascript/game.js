@@ -22,7 +22,7 @@ var setupGame = function(){
 
     random = Math.floor(Math.random()* 102+19)
 
-    $("#answer").html(random);
+    $("#answer").html("Goal: " + random + "<br>");
 
 
 
@@ -60,7 +60,7 @@ $(document).on("click", ".crystal" ,function(){
 
     if(previous === random){
         wins++;
-        $("#win").html("Wins: " + wins)
+        $("#win").html("Wins: " + wins + "<br>")
         previous = 0;
         setupGame();
     }
